@@ -1,3 +1,5 @@
 # tensorflow-on-ios-tutorial
-try to run tensorflow on ios, and identify male/female voices from audio recordings
-http://machinethink.net/blog/tensorflow-on-ios/
+A tutorial from http://machinethink.net/blog/tensorflow-on-ios/
+- Tensorflow on iOS (CPU).
+- TODO: Running neural net using Metal on iOS (GPU).
+
