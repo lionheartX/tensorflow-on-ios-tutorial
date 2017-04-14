@@ -1,5 +1,6 @@
 # TRAINING RUNS IN AN INFINITE LOOP, STOP IT USING Ctrl+C once converge
 
+
 import os
 import numpy as np
 import tensorflow as tf
