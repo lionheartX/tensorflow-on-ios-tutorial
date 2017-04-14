@@ -57,7 +57,7 @@ with tf.name_scope("inference"):
     inference = tf.to_float(y_pred > 0.5, name="inference")
 
 init = tf.global_variables_initializer()
-
+saver = tf.train.Saver()
 tf.gfile.MakeDirs(checkpoint_dir)
 
 with tf.Session() as sess:
@@ -93,5 +93,5 @@ with tf.Session() as sess:
 		step += 1
 		if step % save_every == 0:
 			checkpoint_file = os.path.join(checkpoint_dir, "model")
-			tf.train.Saver().save(sess, checkpoint_file) # in /tmp/voice/
+			saver.save(sess, checkpoint_file) # in /tmp/voice/
 			print("*** SAVED MODEL ***")
